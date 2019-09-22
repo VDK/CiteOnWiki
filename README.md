@@ -1,4 +1,4 @@
-# nagfree
-A Chrome extension that makes a few sites a little better
+# Cite Delpher on Wiki
+A Chrome extension making it easy to cite the Delpher.nl Dutch language newspaper archive on Wikipedia
 
-NagFree is a Chrome extension that takes away the usability problems some sites have. Flickr and Instagram, for example, don't allow you to right-click on photographs to save them. This extension fixes that. The search results page on Wikimedia Commons is pretty awful, so this extension fixes that.
+Cite Delpher on Wiki is a Chrome extension that adds citation wikitext to the "share" options on Delpher.nl, the Dutch language newspaper archive

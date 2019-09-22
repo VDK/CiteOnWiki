@@ -1,12 +1,14 @@
 {
     "manifest_version": 2,
-    "name": "Nagfree",
-    "description": "Makes sites a little better",
-    "version": "0.2",
+    "name": "Cite Delpher on Wiki",
+    "description": "Adds citation wikitext to the \"share\" options on Delpher.nl, the Dutch language newspaper archive",
+    "version": "0.1",
     "permissions" : [
-        "tabs",
-        "webNavigation",
-        "<all_urls>"
+        "activeTab"
+    ],
+     "optional_permissions": [
+      "topSites",
+      "http://www.delpher.nl/*"
     ],
     "web_accessible_resources" : [
         "*.js",
