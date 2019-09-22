@@ -1,14 +1,12 @@
 {
     "manifest_version": 2,
-    "name": "Cite Delpher on Wiki",
-    "description": "Adds citation wikitext to the \"share\" options on Delpher.nl, the Dutch language newspaper archive",
+    "name": "Cite on Wiki",
+    "description": "Adds citation wikitext to the \"share\" options",
     "version": "0.1",
     "permissions" : [
-        "activeTab"
-    ],
-     "optional_permissions": [
-      "topSites",
-      "http://www.delpher.nl/*"
+        "activeTab",
+        "webNavigation",
+        "<all_urls>"
     ],
     "web_accessible_resources" : [
         "*.js",

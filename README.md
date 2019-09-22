@@ -1,4 +1,5 @@
-# Cite Delpher on Wiki
-A Chrome extension making it easy to cite the Delpher.nl Dutch language newspaper archive on Wikipedia
+# Cite on Wiki
+A Chrome extension making it easier to cite a source within Wikipedia.
 
-Cite Delpher on Wiki is a Chrome extension that adds citation wikitext to the "share" options on Delpher.nl, the Dutch language newspaper archive
+First version focuses on support for Delpher.nl, Dutch language newspaper archive on Wikipedia.
+More sites to support can be requested

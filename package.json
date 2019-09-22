@@ -1,7 +1,7 @@
 {
-  "name": "CiteDelpherOnWiki",
+  "name": "CiteOnWiki",
   "version": "0.1.0",
-  "repository": "git@github.com:VDK/CiteDelpherOnWiki.git",
+  "repository": "git@github.com:VDK/CiteOnWiki.git",
   "author": "Vera de Kok",
   "license": "MIT",
   "private": true,
