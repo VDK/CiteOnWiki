@@ -1,3 +1,5 @@
+const MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+
 export function $(selector) {
     return document.querySelector(selector);
 }
@@ -93,4 +95,32 @@ export class Storage {
         const json = JSON.stringify(this._data);
         this._store.setItem(this._key, json);
     }
+}
+export function paste0(input){
+    input ="0"+ input;
+    input = input.slice(-2);
+    return input;
+}
+function escapeString(input){
+    input = input.replace(/'/g, "\'");
+    input = input.replace(/"/g, "&quot;");
+    return input;
+}
+export function getWikiText( url,title, author, pubDate, website,publisher,quote, language ){
+    var today = new Date();
+    var todayLabel = today.getDate() +' ' + MONTHS[today.getMonth()-1]+' '+today.getFullYear();   
+
+   return escapeString("<ref>{{cite web"
+     +"|url="+url
+     +"|title="+title
+     + (language != "" ? "|trans-title=  " :"")
+     + (author != "" ? "|author= "+author:"")
+     +"|date="+pubDate.getFullYear()+" "+MONTHS[pubDate.getMonth()]+" "+pubDate.getDate()
+     + (website   != "" ? "|website= "+website:"")
+     + (publisher != "" ? "|publisher= "+publisher:"")
+     +"|access-date="+todayLabel
+     + (quote    != "" ? "|quote= "+quote:"")
+     + (language != "" ? "|language= "+language:"")
+     +"}}</ref>");
+   
 }
