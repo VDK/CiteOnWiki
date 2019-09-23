@@ -108,7 +108,7 @@ function escapeString(input){
 }
 export function getWikiText( url,title, author, pubDate, website,publisher,quote, language ){
     var today = new Date();
-    var todayLabel = today.getDate() +' ' + MONTHS[today.getMonth()-1]+' '+today.getFullYear();   
+    var todayLabel = today.getDate() +' ' + MONTHS[today.getMonth()]+' '+today.getFullYear();   
 
    return escapeString("<ref>{{cite web"
      +"|url="+url
